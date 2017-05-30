@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\nlibrary(readr)\ntraveldata <- read.csv(\"C:/Users/Eileen/Desktop/taiwantravel.csv\",fileEncoding =\"Big5\")\nView(traveldata)\n\n",
+    "created" : 1496155424186.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "4000496958",
+    "id" : "15FD1C08",
+    "lastKnownWriteTime" : 7008840621878103369,
+    "last_content_update" : 1496155791187,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

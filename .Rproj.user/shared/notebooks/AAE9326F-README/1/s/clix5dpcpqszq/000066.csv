@@ -1,0 +1,13 @@
+"0","southmoneytd<-traveldatas[grepl(""二萬元至未滿三萬元"",traveldatas$`個人每月平均所得`),]
+"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","library(dplyr)"
+"0","group_by(southmoneytd,Career=`職業`) %>%"
+"0","  summarise(`二萬元至未滿三萬元職業人數(南)`=n()) %>%"
+"0","  arrange(desc(`二萬元至未滿三萬元職業人數(南)`)) #南部二萬~三萬職業旅遊表單"
