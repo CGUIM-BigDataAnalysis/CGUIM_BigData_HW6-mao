@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1497508415474.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F6970908",
+    "lastKnownWriteTime" : 13229804949012596,
+    "last_content_update" : 1497508415474,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "126AC662",
+        "caption" : "orderDF",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=orderDF&cache_key=126AC662",
+        "displayedObservations" : "22257",
+        "environment" : "",
+        "object" : "orderDF",
+        "preview" : "0",
+        "totalObservations" : "22257",
+        "variables" : "4"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

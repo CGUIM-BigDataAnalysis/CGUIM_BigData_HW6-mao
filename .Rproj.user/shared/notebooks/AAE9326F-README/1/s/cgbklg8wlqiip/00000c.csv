@@ -1,0 +1,5 @@
+"0","southmoneyjobtd<-southmoneytd[grepl(""服務及銷售工作人員"",southmoneytd$`職業`),]"
+"0","library(dplyr)"
+"0","group_by(southmoneyjobtd,Years=`年齡`) %>%"
+"0","  summarise(`二萬元至未滿三萬元服務及銷售工作人員年齡人數(南)`=n()) %>%"
+"0","  arrange(desc(`二萬元至未滿三萬元服務及銷售工作人員年齡人數(南)`)) #南部二萬~三萬服務及銷售工作人員年齡旅遊表單"

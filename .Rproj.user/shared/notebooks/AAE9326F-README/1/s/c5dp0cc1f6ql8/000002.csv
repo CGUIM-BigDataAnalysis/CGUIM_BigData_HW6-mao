@@ -1,0 +1,12 @@
+"0","library(readr)"
+"2","
+Attaching package: ．readr・
+
+"
+"2","The following object is masked from ．package:scales・:
+
+    col_factor
+
+"
+"0","traveldata <- read.csv(""C:/Users/Eileen/Desktop/taiwantravel.csv"",fileEncoding =""Big5"")"
+"0","View(traveldata)"

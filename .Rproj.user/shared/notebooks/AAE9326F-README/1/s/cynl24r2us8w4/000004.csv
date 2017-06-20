@@ -1,0 +1,8 @@
+"0","northmoneytd<-traveldatan[grepl(""無收入"",traveldatan$`個人每月平均所得`),] #北部旅遊無收入的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","norjob<-"
+"0","  group_by(northmoneytd,Career=`職業`) %>%"
+"0","  summarise(`無收入職業人數(北)`=n()) %>%"
+"0","  arrange(desc(`無收入職業人數(北)`)) #北部無收入職業旅遊表單"
+"0","knitr::kable(norjob[1:7,])"

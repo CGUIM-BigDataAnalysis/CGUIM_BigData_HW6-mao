@@ -1,0 +1,8 @@
+"0","traveldatam <- traveldata[grepl(""中部"",traveldata$`居住地區`),] #中部旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","midmoney<-"
+"0","  group_by(traveldatam,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`個人每月平均所得人數(中)`=n()) %>%"
+"0","  arrange(desc(`個人每月平均所得人數(中)`)) #中部月所得旅遊表單"
+"0","knitr::kable(midmoney[1:10,])"

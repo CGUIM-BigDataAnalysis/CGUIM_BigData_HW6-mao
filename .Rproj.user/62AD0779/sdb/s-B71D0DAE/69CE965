@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1497506025870.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "69CE965",
+    "lastKnownWriteTime" : 7008840621878103369,
+    "last_content_update" : 1497506025870,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "85EF5A5E",
+        "caption" : "traveldata",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=traveldata&cache_key=85EF5A5E",
+        "displayedObservations" : "22257",
+        "environment" : "",
+        "object" : "traveldata",
+        "preview" : "0",
+        "totalObservations" : "22257",
+        "variables" : "16"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

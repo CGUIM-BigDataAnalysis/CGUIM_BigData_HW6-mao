@@ -1,0 +1,7 @@
+"0","traveldatanomoney <- traveldata[grepl(""無收入"",traveldata$`個人每月平均所得`),] #無收入旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","nmtd<-group_by(traveldatanomoney,Career=`職業`) %>%"
+"0","  summarise(`無收入職業人數`=n()) %>%"
+"0","  arrange(desc(`無收入職業人數`)) #無收入旅遊的職業"
+"0","knitr::kable(nmtd[1:8,])"

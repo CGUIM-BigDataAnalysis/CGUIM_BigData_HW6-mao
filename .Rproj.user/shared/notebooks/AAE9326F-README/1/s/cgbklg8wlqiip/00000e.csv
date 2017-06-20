@@ -1,0 +1,5 @@
+"0","traveldatae <- traveldata[grepl(""東部"",traveldata$`居住地區`),] #東部旅遊的表單"
+"0","library(dplyr)"
+"0","group_by(traveldatae,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`個人每月平均所得人數(東)`=n()) %>%"
+"0","  arrange(desc(`個人每月平均所得人數(東)`)) #東部月所得旅遊表單"

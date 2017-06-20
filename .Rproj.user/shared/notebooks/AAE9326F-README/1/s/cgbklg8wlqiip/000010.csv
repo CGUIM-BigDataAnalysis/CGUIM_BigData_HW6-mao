@@ -1,0 +1,5 @@
+"0","eastmoneytd<-traveldatae[grepl(""未滿一萬元"",traveldatae$`個人每月平均所得`),]"
+"0","library(dplyr)"
+"0","group_by(eastmoneytd,Career=`職業`) %>%"
+"0","  summarise(`未滿一萬元職業人數(東)`=n()) %>%"
+"0","  arrange(desc(`未滿一萬元職業人數(東)`))"

@@ -1,0 +1,8 @@
+"0","eastmoneyjobtd<-eastmoneytd[grepl(""家庭管理"",eastmoneytd$`職業`),]"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","easage<-"
+"0","  group_by(eastmoneyjobtd,Age=`年齡`) %>%"
+"0","  summarise(`未滿一萬元家庭管理年齡人數(東)`=n()) %>%"
+"0","  arrange(desc(`未滿一萬元家庭管理年齡人數(東)`))"
+"0","knitr::kable(easage[1:6,])"

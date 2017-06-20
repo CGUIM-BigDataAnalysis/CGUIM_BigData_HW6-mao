@@ -1,0 +1,26 @@
+"0","traveldatan <- traveldata[grepl(""北部"",traveldata$`居住地區`),] #北部旅遊的表單"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","library(dplyr)"
+"2","
+Attaching package: ��dplyr��
+
+"
+"2","The following objects are masked from ��package:stats��:
+
+    filter, lag
+
+"
+"2","The following objects are masked from ��package:base��:
+
+    intersect, setdiff, setequal, union
+
+"
+"0","group_by(traveldatan,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`個人每月平均所得人數(北)`=n()) %>%"
+"0","  arrange(desc(`個人每月平均所得人數(北)`)) #北部月所得旅遊表單"

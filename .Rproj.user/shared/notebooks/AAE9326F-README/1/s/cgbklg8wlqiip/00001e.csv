@@ -1,0 +1,5 @@
+"0","outmoneyjobtd<-outmoneytd[grepl(""家庭管理"",outmoneytd$`職業`),]"
+"0","library(dplyr)"
+"0","group_by(outmoneyjobtd,Years=`年齡`) %>%"
+"0","  summarise(`未滿一萬元家庭管理年齡人數(離島)`=n()) %>%"
+"0","  arrange(desc(`未滿一萬元家庭管理年齡人數(離島)`))"

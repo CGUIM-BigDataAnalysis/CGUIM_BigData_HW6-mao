@@ -1,0 +1,136 @@
+"0","traveldatan <- traveldata[grepl(""北部"",traveldata$`居住地區`),] #北部旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","normoney<-"
+"0","  group_by(traveldatan,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`北部個人每月平均所得人數`=n()) %>%"
+"0","  arrange(desc(`北部個人每月平均所得人數`)) #北部月所得旅遊表單"
+"0","attach(normoney)"
+"0","normoney$全<-sum(normoney$北部個人每月平均所得人數)"
+"0","normoneymean<-normoney %>% "
+"0","  select(Revenue, `北部個人每月平均所得人數`, 全) %>% "
+"0","  group_by(R=Revenue,Times=`北部個人每月平均所得人數`, all=全) %>%"
+"0","  summarise(`北部`=mean(Times/all*100))%>%"
+"0","  arrange(desc(`北部`))"
+"0","a<-normoneymean$Times<-NULL"
+"0","b<-normoneymean$all<-NULL"
+"0","norclean <- normoneymean[-7:-10,]"
+"0","traveldatas <- traveldata[grepl(""南部"",traveldata$`居住地區`),] #南部旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","soumoney<-"
+"0","  group_by(traveldatas,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`南部個人每月平均所得人數`=n()) %>%"
+"0","  arrange(desc(`南部個人每月平均所得人數`)) #南部月所得旅遊表單"
+"0","attach(soumoney)"
+"2","The following object is masked from normoney:
+
+    Revenue
+
+"
+"0","soumoney$全<-sum(soumoney$南部個人每月平均所得人數)"
+"0","soumoneymean<-soumoney %>% "
+"0","  select(Revenue, `南部個人每月平均所得人數`, 全) %>% "
+"0","  group_by(R=Revenue,Times=`南部個人每月平均所得人數`, all=全) %>%"
+"0","  summarise(`南部`=mean(Times/all*100))%>%"
+"0","  arrange(desc(`南部`))"
+"0","c<-soumoneymean$Times<-NULL"
+"0","d<-soumoneymean$all<-NULL"
+"0","souclean <- soumoneymean[-7:-10,]"
+"0","ns<-merge(norclean,souclean,by=""R"")"
+"0","traveldatae <- traveldata[grepl(""東部"",traveldata$`居住地區`),] #東部旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","easmoney<-"
+"0","  group_by(traveldatae,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`東部個人每月平均所得人數`=n())  #東部月所得旅遊表單"
+"0","attach(easmoney)"
+"2","The following object is masked from soumoney:
+
+    Revenue
+
+"
+"2","The following object is masked from normoney:
+
+    Revenue
+
+"
+"0","easmoney$全<-sum(easmoney$東部個人每月平均所得人數)"
+"0","easmoneymean<-easmoney %>% "
+"0","  select(Revenue, `東部個人每月平均所得人數`, 全) %>% "
+"0","  group_by(R=Revenue,Times=`東部個人每月平均所得人數`, all=全) %>%"
+"0","  summarise(`東部`=mean(Times/all*100))%>%"
+"0","  arrange(desc(`東部`))"
+"0","e<-easmoneymean$Times<-NULL"
+"0","f<-easmoneymean$all<-NULL"
+"0","easclean <- easmoneymean[-7:-10,]"
+"0","traveldatam <- traveldata[grepl(""中部"",traveldata$`居住地區`),] #中部旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","midmoney<-"
+"0","  group_by(traveldatam,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`中部個人每月平均所得人數`=n())"
+"0","attach(midmoney)"
+"2","The following object is masked from easmoney:
+
+    Revenue
+
+"
+"2","The following object is masked from soumoney:
+
+    Revenue
+
+"
+"2","The following object is masked from normoney:
+
+    Revenue
+
+"
+"0","midmoney$全<-sum(midmoney$中部個人每月平均所得人數)"
+"0","midmoneymean<-midmoney %>% "
+"0","  select(Revenue, `中部個人每月平均所得人數`, 全) %>% "
+"0","  group_by(R=Revenue,Times=`中部個人每月平均所得人數`, all=全) %>%"
+"0","  summarise(`中部`=mean(Times/all*100))%>%"
+"0","  arrange(desc(`中部`))"
+"0","g<-midmoneymean$Times<-NULL"
+"0","h<-midmoneymean$all<-NULL"
+"0","midclean <- midmoneymean[-7:-10,]"
+"0","em<-merge(easclean,midclean,by=""R"")"
+"0","nsem<-merge(ns,em,by=""R"")"
+"0","traveldatao <- traveldata[grepl(""離島地區"",traveldata$`居住地區`),] #離島旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","outmoney<-"
+"0","  group_by(traveldatao,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`外島個人每月平均所得人數`=n())"
+"0","attach(outmoney)"
+"2","The following object is masked from midmoney:
+
+    Revenue
+
+"
+"2","The following object is masked from easmoney:
+
+    Revenue
+
+"
+"2","The following object is masked from soumoney:
+
+    Revenue
+
+"
+"2","The following object is masked from normoney:
+
+    Revenue
+
+"
+"0","outmoney$全<-sum(outmoney$外島個人每月平均所得人數)"
+"0","outmoneymean<-outmoney %>% "
+"0","  select(Revenue, `外島個人每月平均所得人數`, 全) %>% "
+"0","  group_by(R=Revenue,Times=`外島個人每月平均所得人數`, all=全) %>%"
+"0","  summarise(`離島`=mean(Times/all*100))%>%"
+"0","  arrange(desc(`離島`))"
+"0","i<-outmoneymean$Times<-NULL"
+"0","j<-outmoneymean$all<-NULL"
+"0","outclean <- outmoneymean[-7:-10,]"
+"0","nsemo<-merge(nsem,outclean,by=""R"")"

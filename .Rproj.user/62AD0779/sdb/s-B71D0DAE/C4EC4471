@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1497506360493.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C4EC4471",
+    "lastKnownWriteTime" : 7008840621878103369,
+    "last_content_update" : 1497506360493,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "ED846B96",
+        "caption" : "age_travel",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=age_travel&cache_key=ED846B96",
+        "displayedObservations" : "40",
+        "environment" : "",
+        "object" : "age_travel",
+        "preview" : "0",
+        "totalObservations" : "40",
+        "variables" : "3"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

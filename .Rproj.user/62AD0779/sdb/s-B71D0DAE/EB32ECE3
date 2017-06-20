@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1497515687579.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EB32ECE3",
+    "lastKnownWriteTime" : 13229804949012596,
+    "last_content_update" : 1497515687579,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "665502F",
+        "caption" : "nmtd",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=nmtd&cache_key=665502F",
+        "displayedObservations" : 8,
+        "environment" : "",
+        "object" : "nmtd",
+        "preview" : 0,
+        "totalObservations" : 8,
+        "variables" : 2
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

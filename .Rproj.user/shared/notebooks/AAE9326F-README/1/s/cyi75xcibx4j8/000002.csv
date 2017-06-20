@@ -1,3 +1,0 @@
-"0","library(readr)"
-"0","traveldata <- read.csv(""C:/Users/Eileen/Desktop/taiwantravel.csv"",fileEncoding =""Big5"")"
-"0","View(traveldata)"

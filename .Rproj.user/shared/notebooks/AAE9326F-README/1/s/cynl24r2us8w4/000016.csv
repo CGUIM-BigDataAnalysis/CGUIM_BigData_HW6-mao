@@ -1,0 +1,8 @@
+"0","middlemoneytd<-traveldatam[grepl(""二萬元至未滿三萬元"",traveldatam$`個人每月平均所得`),]"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","midjob<-"
+"0","  group_by(middlemoneytd,Career=`職業`) %>%"
+"0","  summarise(`二萬元至未滿三萬元職業人數(中)`=n()) %>%"
+"0","  arrange(desc(`二萬元至未滿三萬元職業人數(中)`))"
+"0","knitr::kable(midjob[1:13,])"

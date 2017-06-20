@@ -1,0 +1,8 @@
+"0","traveldatao <- traveldata[grepl(""離島地區"",traveldata$`居住地區`),] #離島旅遊的表單"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","outmoney<-"
+"0","  group_by(traveldatao,Revenue=`個人每月平均所得`) %>%"
+"0","  summarise(`個人每月平均所得人數(離島)`=n()) %>%"
+"0","  arrange(desc(`個人每月平均所得人數(離島)`)) #離島月所得旅遊表單"
+"0","knitr::kable(outmoney[1:10,])"

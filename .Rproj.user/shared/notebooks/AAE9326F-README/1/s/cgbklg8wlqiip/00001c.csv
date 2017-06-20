@@ -1,0 +1,5 @@
+"0","outmoneytd<-traveldatao[grepl(""未滿一萬元"",traveldatao$`個人每月平均所得`),]"
+"0","library(dplyr)"
+"0","group_by(outmoneytd,Career=`職業`) %>%"
+"0","  summarise(`未滿一萬元職業人數(離島)`=n()) %>%"
+"0","  arrange(desc(`未滿一萬元職業人數(離島)`))"

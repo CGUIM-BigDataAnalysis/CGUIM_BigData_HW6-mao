@@ -1,0 +1,55 @@
+"0","library(dplyr)"
+"0","library(data.table)"
+"2","data.table 1.10.4
+"
+"2","  The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way
+"
+"2","  Documentation: ?data.table, example(data.table) and browseVignettes(""data.table"")
+"
+"2","  Release notes, videos and slides: http://r-datatable.com
+"
+"2","
+Attaching package: ¡¥data.table¡¦
+
+"
+"2","The following objects are masked from ¡¥package:dplyr¡¦:
+
+    between, first, last
+
+"
+"0","age_travel<-aggregate( å„å­£åœ‹å…§æ—…éŠç¸½æ¬¡æ•¸ ~ å¹´é½¡+å­£åˆ¥, traveldata, sum)"
+"0","city_travel<-aggregate( å„å­£åœ‹å…§æ—…éŠç¸½æ¬¡æ•¸ ~ å±…ä½çš„ç¸£å¸‚, traveldata, sum)"
+"0","library(knitr)"
+"0","attach(city_travel)"
+"2","The following object is masked _by_ .GlobalEnv:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"2","The following object is masked from out_moneytimes:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"2","The following object is masked from middle_moneytimes:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"2","The following object is masked from south_moneytimes:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"2","The following object is masked from east_moneytimes:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"2","The following object is masked from north_moneytimes:
+
+    ¦U©u°ê¤º®È¹CÁ`¦¸¼Æ
+
+"
+"0","city_travel$`æ—…éŠæ¬¡æ•¸æ¯”ä¾‹`<-city_travel$å„å­£åœ‹å…§æ—…éŠç¸½æ¬¡æ•¸/sum(city_travel$å„å­£åœ‹å…§æ—…éŠç¸½æ¬¡æ•¸)"
+"0","knitr::kable(city_travel[1:22,])"

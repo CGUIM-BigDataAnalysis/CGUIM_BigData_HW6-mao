@@ -1,0 +1,8 @@
+"0","northmoneyjobtd<-northmoneytd[grepl(""家庭管理"",northmoneytd$`職業`),]"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","norage<-"
+"0","  group_by(northmoneyjobtd,Age=`年齡`) %>%"
+"0","  summarise(`無收入家庭管理年齡人數(北)`=n()) %>%"
+"0","  arrange(desc(`無收入家庭管理年齡人數(北)`)) #北部無收入家庭管理年齡旅遊表單"
+"0","knitr::kable(norage[1:8,])"

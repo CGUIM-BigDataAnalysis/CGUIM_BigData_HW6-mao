@@ -1,0 +1,5 @@
+"0","middlemoneyjobtd<-middlemoneytd[grepl(""服務及銷售工作人員"",middlemoneytd$`職業`),]"
+"0","library(dplyr)"
+"0","group_by(middlemoneyjobtd,Years=`年齡`) %>%"
+"0","  summarise(`二萬元至未滿三萬元服務及銷售工作人員年齡人數(中)`=n()) %>%"
+"0","  arrange(desc(`二萬元至未滿三萬元服務及銷售工作人員年齡人數(中)`))"

@@ -1,0 +1,8 @@
+"0","southmoneytd<-traveldatas[grepl(""二萬元至未滿三萬元"",traveldatas$`個人每月平均所得`),]"
+"0","library(knitr)"
+"0","library(dplyr)"
+"0","soujob<-"
+"0","  group_by(southmoneytd,Career=`職業`) %>%"
+"0","  summarise(`二萬元至未滿三萬元職業人數(南)`=n()) %>%"
+"0","  arrange(desc(`二萬元至未滿三萬元職業人數(南)`)) #南部二萬~三萬職業旅遊表單"
+"0","knitr::kable(soujob[1:13,])"
